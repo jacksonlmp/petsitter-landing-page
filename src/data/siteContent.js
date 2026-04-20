@@ -4,6 +4,9 @@ import cliente2Image from "../assets/images/Cliente 2.jpg";
 import cliente3Image from "../assets/images/Cliente 3.jpg";
 import cliente4Image from "../assets/images/Cliente 4.jpg";
 import cliente5Image from "../assets/images/Cliente 5.jpg";
+import fofuchoTesteImage from "../assets/images/Fofucho-teste.jpg";
+import allAnimals from "../assets/images/all-animals.jpg";
+import anaLaura1 from "../assets/images/analaura-1.jpg";
 
 export const brand = {
   initials: "AL",
@@ -21,24 +24,23 @@ export const navItems = [
 export const heroContent = {
   title: ["Ana Laura", "Pet Sitter"],
   description:
-    "Cuido do seu pet no conforto da sua casa, respeitando a rotina e enviando fotos e vídeos em tempo real para sua tranquilidade.",
+    "Cuido do seu pet no conforto da sua casa, respeitando a rotina e enviando atualizações em tempo real para sua tranquilidade.",
   image: {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuA9UEedo30neRRDJFG_q1zd0TRdcHEApMKXhn-Mpu9czuNORh84N7LZhLQSUyP1ekazcIAugzvX42UFbzqhC2JFl4EVhZtLB_as9iv5F1Shy55YDbSN25EPsav4a9-OtI9DHBBwe7Vns_wMYmduH9QdF9yCu-iRXzeks40sg12IueCyT9prILI2pE9w1z8FN6zGyV8__R5nXgT41pEI3OArjPtEPQRef9nPXFdpP0pK9PVPzVeeeqFLw9H9GomfiKPdZH6U8eMVOCwL",
-    alt: "Cachorro dourado brincando em um campo durante o fim de tarde.",
+    src: allAnimals,
+    alt: "Fofucho na imagem principal da landing page.",
   },
   actions: [
     { label: "Agendar pelo WhatsApp", href: "#contact", variant: "primary" },
     { label: "Como funciona o serviço", href: "#services", variant: "secondary" },
   ],
   metrics: [
-    { value: "3+", label: "anos cuidando de pets com rotina, medicação e atenção individual" },
-    { value: "+1h", label: "fotos e vídeos durante toda a visita" },
+    { value: "+3", label: "anos cuidando de pets com rotina, medicação e atenção individual" },
+    { value: "📸", label: "fotos e vídeos durante toda a visita" },
     { value: "100%", label: "atendimento em casa, mantendo a rotina e o conforto" },
   ],
 };
 
 export const aboutContent = {
-  eyebrow: "Pet sitter profissional",
   title: "Quem sou eu?",
   description: [
     "Meu nome é Ana Laura, estudante de medicina veterinária e apaixonada por animais. Possuo 5 gatos e 1 cachorro, e cuidar deles me ensinou a importância de respeitar a rotina, o comportamento e as necessidades individuais de cada pet.",
@@ -51,7 +53,7 @@ export const aboutContent = {
     "Mais do que cuidar, a proposta é garantir tranquilidade para você e bem-estar para o seu pet.",
   ],
   image: {
-    src: aboutAnaLauraImage,
+    src: anaLaura1,
     alt: "Ana Laura na seção Sobre.",
   },
   floatingNote: {
@@ -149,7 +151,7 @@ export const contactContent = {
   eyebrow: "Vamos conversar",
   title: "Pronto para oferecer o melhor cuidado ao seu pet?",
   description:
-    "Entre em contato para consulta, alinhamento de rotina e reserva. A experiencia foi pensada para soar premium sem perder calor humano.",
+    "Entre em contato para alinhar os detalhes do atendimento e garantir um cuidado tranquilo e bem organizado para o seu pet.",
   items: [
     { label: "WhatsApp", value: "(81) 99764-4628", icon: "whatsapp" },
     { label: "Instagram", value: "@anapetsitter.gus", icon: "instagram" },

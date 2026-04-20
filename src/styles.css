@@ -314,18 +314,22 @@ h1 span {
 
 .hero-metrics {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 240px));
   gap: 12px;
-  width: min(760px, 100%);
+  width: 100%;
   margin-top: 28px;
   margin-inline: auto;
+  justify-content: center;
 }
 
 .hero-metrics article {
+  display: grid;
+  justify-items: center;
   padding: 16px;
   border-radius: 22px;
   background: rgba(255, 247, 241, 0.16);
   backdrop-filter: blur(12px);
+  text-align: center;
 }
 
 .hero-metrics strong {
