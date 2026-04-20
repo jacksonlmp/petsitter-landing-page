@@ -1,5 +1,16 @@
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { contactContent } from "../../data/siteContent";
 import Button from "../ui/Button";
+
+function ContactIcon({ type }) {
+  const icons = {
+    whatsapp: FaWhatsapp,
+    instagram: FaInstagram,
+  };
+  const Icon = icons[type];
+
+  return <Icon aria-hidden="true" className="contact-icon" />;
+}
 
 function ContactSection() {
   return (
@@ -12,7 +23,10 @@ function ContactSection() {
         <div className="contact-list">
           {contactContent.items.map((item) => (
             <div className="contact-item" key={item.label}>
-              <span className="contact-label">{item.label}</span>
+              <span className="contact-label">
+                <ContactIcon type={item.icon} />
+                {item.label}
+              </span>
               <strong>{item.value}</strong>
             </div>
           ))}

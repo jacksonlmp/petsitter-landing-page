@@ -1,4 +1,9 @@
 import aboutAnaLauraImage from "../assets/images/about-ana-laura.jpg";
+import cliente1Image from "../assets/images/Cliente 1.jpg";
+import cliente2Image from "../assets/images/Cliente 2.jpg";
+import cliente3Image from "../assets/images/Cliente 3.jpg";
+import cliente4Image from "../assets/images/Cliente 4.jpg";
+import cliente5Image from "../assets/images/Cliente 5.jpg";
 
 export const brand = {
   initials: "AL",
@@ -47,7 +52,7 @@ export const aboutContent = {
   ],
   image: {
     src: aboutAnaLauraImage,
-    alt: "Ana Laura com um pet na seção Sobre.",
+    alt: "Ana Laura na seção Sobre.",
   },
   floatingNote: {
     value: "+0%",
@@ -103,28 +108,27 @@ export const servicesContent = {
 };
 
 export const galleryContent = {
-  eyebrow: "Momentos reais",
-  title: "Felicidade com luz quente e presenca viva.",
+  title: "Nossos clientes",
   items: [
     {
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuA9UEedo30neRRDJFG_q1zd0TRdcHEApMKXhn-Mpu9czuNORh84N7LZhLQSUyP1ekazcIAugzvX42UFbzqhC2JFl4EVhZtLB_as9iv5F1Shy55YDbSN25EPsav4a9-OtI9DHBBwe7Vns_wMYmduH9QdF9yCu-iRXzeks40sg12IueCyT9prILI2pE9w1z8FN6zGyV8__R5nXgT41pEI3OArjPtEPQRef9nPXFdpP0pK9PVPzVeeeqFLw9H9GomfiKPdZH6U8eMVOCwL",
-      alt: "Golden retriever brincando em um gramado iluminado pelo sol.",
-      className: "gallery-large",
+      src: cliente1Image,
+      alt: "Cliente 1 da Ana Laura Petsitter.",
     },
     {
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCJnw8UwoFzLhY8b__FxJdkuKHzyH5xgu5T58nOhXlbQJEt5yAj8F0tPfaE8OeB28BDnS_lCZggjlEqOA9wAduH9ssu2WBOT3obk8PVRuz-IiiuZAYPNbNOpjVnLkEBLKKATyIN2_4RA4ETiDCOwJkDBq14H6e4RJO3Yfbo0t8XGMhnp6I_KBDCbnjMaXkM8HBz8ku1N-37AURVhh42RYI8fjRUoZiMHcQ2GfjkZAvb6WvnFtEGL4LbI-KKWn03MNLEAnum98HgNm5b",
-      alt: "Petsitter segurando um beagle em ambiente interno claro.",
-      className: "gallery-wide",
+      src: cliente2Image,
+      alt: "Cliente 2 da Ana Laura Petsitter.",
     },
     {
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAoTEc65tbmXuZr4FLQS5rczL5mGtq7_vxTqv6zRI-AjlKIeuY6SkaVkvZSMW-xXFKYP_YvBwmrYiyzOcsLVl4r4uIiVKfY0EsfXfLIkYGbbiZ9i8sMnVznSwI5PQrC2LGqIl7sMwZD0W0kHKjtJvh6k8hiMKVf9lWCij4MBkrW_t5O0mrfmFWJ6DTPvPr0Gx4YWBcZ-6rvOG_Zih0JfGduGViGrhnaXDk7tvxZuhxqbLF3nR36hH718pZUzRgeoGV_44ja0cDubHBK",
-      alt: "Gato elegante iluminado por luz natural suave.",
-      className: "gallery-small",
+      src: cliente3Image,
+      alt: "Cliente 3 da Ana Laura Petsitter.",
     },
     {
-      src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAmLCUe66aGGjzXtlQsAaJReOGIpYO5-DGnidB_lrT9lww3iVFN-SduRnbtqFlraMBSUjoOMVpb-_bQQgXOFU32ojRkv03l4AvArVI-WIGQu6NE6tzaKQNI8qHHg96PhZiGmyuagnkhqqw-bTy6_zwMcZC-jy3GZMW8FkE3aHptCfwoPrEcpFXhHLbbo3F0S60V2v8cyIKDv1BsQVNAgdkOtsKCZPWlV9e8rrKi1OQs97VRIOV2_L8_rxD1i0ryG8RwZBCU_18FPMQP",
-      alt: "Dois cachorros pequenos correndo juntos no quintal.",
-      className: "gallery-small",
+      src: cliente4Image,
+      alt: "Cliente 4 da Ana Laura Petsitter.",
+    },
+    {
+      src: cliente5Image,
+      alt: "Cliente 5 da Ana Laura Petsitter.",
     },
   ],
 };
@@ -147,17 +151,41 @@ export const contactContent = {
   description:
     "Entre em contato para consulta, alinhamento de rotina e reserva. A experiencia foi pensada para soar premium sem perder calor humano.",
   items: [
-    { label: "WhatsApp", value: "(81) 99764-4628" },
-    { label: "Instagram", value: "@anapetsitter.gus" },
+    { label: "WhatsApp", value: "(81) 99764-4628", icon: "whatsapp" },
+    { label: "Instagram", value: "@anapetsitter.gus", icon: "instagram" },
   ],
   cta: {
     label: "Enviar mensagem no WhatsApp",
-    href: "https://wa.me/5581997644628",
+    href: "https://wa.me/558197644628",
   },
 };
 
 export const footerContent = {
-  description:
-    "Criando um santuario de carinho para pets com rotina, energia e um cuidado acolhedor de alto padrao.",
+  brandLine: "Ana Laura Petsitter",
+  contact: [
+    {
+      label: "WhatsApp",
+      value: "(81) 9764-4628",
+      href: "https://wa.me/558197644628",
+      icon: "whatsapp",
+    },
+    {
+      label: "Email",
+      value: "analaurasf2504@gmail.com",
+      href: "mailto:analaurasf2504@gmail.com",
+      icon: "email",
+    },
+    {
+      label: "Instagram",
+      value: "@anapetsitter.gus",
+      href: "https://instagram.com/anapetsitter.gus",
+      icon: "instagram",
+    },
+  ],
   links: navItems,
+  legal: {
+    copyright: "© 2026 Ana Laura Petsitter",
+    developerLabel: "Desenvolvido por Jackson Lima",
+    developerHref: "https://www.linkedin.com/in/jacksonlmp",
+  },
 };
