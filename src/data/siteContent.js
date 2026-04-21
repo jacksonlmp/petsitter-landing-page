@@ -4,6 +4,11 @@ import cliente2Image from "../assets/images/Cliente 2.jpg";
 import cliente3Image from "../assets/images/Cliente 3.jpg";
 import cliente4Image from "../assets/images/Cliente 4.jpg";
 import cliente5Image from "../assets/images/Cliente 5.jpg";
+import cliente6Image from "../assets/images/Cliente 6.jpg";
+import cliente7Image from "../assets/images/Cliente 7.jpg";
+import cliente8Image from "../assets/images/Cliente 8.jpg";
+import cliente9Image from "../assets/images/Cliente 9.jpg";
+import cliente10Image from "../assets/images/Cliente 10.jpg";
 import fofuchoTesteImage from "../assets/images/Fofucho-teste.jpg";
 import allAnimals from "../assets/images/all-animals.jpg";
 import anaLaura1 from "../assets/images/analaura-1.jpg";
@@ -128,6 +133,27 @@ export const galleryContent = {
       src: cliente5Image,
       alt: "Cliente 5 da Ana Laura Petsitter.",
     },
+    {
+      src: cliente6Image,
+      alt: "Cliente 6 da Ana Laura Petsitter.",
+    },
+    {
+      src: cliente7Image,
+      alt: "Cliente 7 da Ana Laura Petsitter.",
+    },
+    {
+      src: cliente8Image,
+      alt: "Cliente 8 da Ana Laura Petsitter.",
+    },
+    {
+      src: cliente9Image,
+      alt: "Cliente 9 da Ana Laura Petsitter.",
+    },
+    {
+      src: cliente10Image,
+      alt: "Cliente 10 da Ana Laura Petsitter.",
+    },
+
   ],
 };
 
