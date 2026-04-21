@@ -17,7 +17,7 @@ export const navItems = [
   { label: "Inicio", href: "#home" },
   { label: "Sobre", href: "#about" },
   { label: "Servicos", href: "#services" },
-  { label: "Galeria", href: "#gallery" },
+  { label: "Clientes", href: "#gallery" },
   { label: "Contato", href: "#contact" },
 ];
 
@@ -55,10 +55,6 @@ export const aboutContent = {
   image: {
     src: anaLaura1,
     alt: "Ana Laura na seção Sobre.",
-  },
-  floatingNote: {
-    value: "+0%",
-    text: "estresse com mudança de ambiente",
   },
   tags: [
     { label: "Cachorro", icon: "dog" },

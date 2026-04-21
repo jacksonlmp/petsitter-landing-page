@@ -392,31 +392,6 @@ h1 span {
   object-fit: cover;
 }
 
-.floating-note {
-  position: absolute;
-  right: 0;
-  bottom: 18px;
-  z-index: 2;
-  width: 210px;
-  padding: 24px;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.74);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 18px 46px var(--shadow);
-}
-
-.floating-note strong {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 2rem;
-  color: var(--primary);
-}
-
-.floating-note span {
-  color: var(--text-soft);
-  line-height: 1.6;
-}
-
 .about-copy {
   padding-left: 22px;
 }
