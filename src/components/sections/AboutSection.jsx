@@ -39,7 +39,6 @@ function AboutSection() {
     description,
     bulletPoints,
     image,
-    floatingNote,
     tags,
     pillars,
   } = aboutContent;
@@ -51,10 +50,6 @@ function AboutSection() {
         <figure className="portrait-frame">
           <img alt={image.alt} src={image.src} />
         </figure>
-        <aside className="floating-note">
-          <strong>{floatingNote.value}</strong>
-          <span>{floatingNote.text}</span>
-        </aside>
       </div>
 
       <div className="about-copy">
