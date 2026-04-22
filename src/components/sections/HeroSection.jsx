@@ -1,3 +1,4 @@
+import heroLogo from "../../assets/images/logo-base.png";
 import { heroContent } from "../../data/siteContent";
 import Button from "../ui/Button";
 
@@ -16,7 +17,13 @@ function HeroSection() {
         <h1>
           {title[0]}
           <br />
-          <span>{title[1]}</span>
+          <span className="hero-logo-wrap">
+            <img
+              alt={title[1]}
+              className="hero-logo"
+              src={heroLogo}
+            />
+          </span>
         </h1>
         <p className="hero-text">{description}</p>
 
