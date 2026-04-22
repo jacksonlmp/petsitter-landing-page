@@ -125,9 +125,14 @@ a {
   color: var(--primary);
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .mobile-menu-toggle,
-.mobile-menu,
-.mobile-whatsapp-fab {
+.mobile-menu {
   display: none;
 }
 
@@ -214,6 +219,7 @@ a {
   z-index: 35;
   width: 58px;
   height: 58px;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
@@ -1064,7 +1070,7 @@ h2 {
     border-radius: 24px;
   }
 
-  .topbar-cta {
+  .topbar-actions {
     display: none;
   }
 
@@ -1074,10 +1080,6 @@ h2 {
 
   .mobile-menu {
     display: block;
-  }
-
-  .mobile-whatsapp-fab {
-    display: flex;
   }
 
   .hero {

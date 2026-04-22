@@ -26,9 +26,11 @@ function Header() {
             </a>
           ))}
         </nav>
-        <Button className="topbar-cta" href="#contact">
-          Agendar agora
-        </Button>
+        <div className="topbar-actions">
+          <Button className="topbar-cta" href="#contact">
+            Agendar agora
+          </Button>
+        </div>
 
         <button
           aria-expanded={isMenuOpen}
