@@ -19,11 +19,11 @@ export const brand = {
 };
 
 export const navItems = [
-  { label: "Inicio", href: "#home" },
-  { label: "Sobre", href: "#about" },
-  { label: "Servicos", href: "#services" },
-  { label: "Clientes", href: "#gallery" },
-  { label: "Contato", href: "#contact" },
+  { label: "Inicio", href: "#home", icon: "home" },
+  { label: "Sobre", href: "#about", icon: "about" },
+  { label: "Serviços", href: "#services", icon: "services" },
+  { label: "Clientes", href: "#gallery", icon: "clients" },
+  { label: "Contato", href: "#contact", icon: "contact" },
 ];
 
 export const heroContent = {

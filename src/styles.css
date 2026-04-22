@@ -113,7 +113,10 @@ a {
   gap: 22px;
 }
 
-.nav a {
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.05em;
@@ -121,7 +124,12 @@ a {
   color: var(--text-soft);
 }
 
-.nav a:hover {
+.nav-link-icon {
+  flex: 0 0 auto;
+  font-size: 0.88rem;
+}
+
+.nav-link:hover {
   color: var(--primary);
 }
 
@@ -200,12 +208,21 @@ a {
   gap: 14px;
 }
 
-.mobile-nav a {
+.mobile-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   padding: 14px 0;
   color: var(--text);
   font-size: 1.02rem;
   font-weight: 800;
   border-bottom: 1px solid rgba(255, 122, 56, 0.14);
+}
+
+.mobile-nav-link-icon {
+  flex: 0 0 auto;
+  color: var(--primary);
+  font-size: 0.98rem;
 }
 
 .mobile-menu-cta {
