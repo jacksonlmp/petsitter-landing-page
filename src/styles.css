@@ -282,6 +282,7 @@ a {
 .about,
 .services,
 .gallery,
+.testimonials,
 .contact,
 .footer {
   position: relative;
@@ -289,6 +290,7 @@ a {
 
 .services::before,
 .gallery::before,
+.testimonials::before,
 .contact::before,
 .footer::before {
   content: "";
@@ -836,6 +838,68 @@ h2 {
   background: linear-gradient(135deg, var(--primary), var(--primary-glow));
 }
 
+.testimonials {
+  padding: 96px 0;
+  background: linear-gradient(180deg, #fff7f1 0%, #fff1e6 100%);
+}
+
+.testimonials::before {
+  background: linear-gradient(180deg, var(--surface) 0%, #fff7f1 100%);
+}
+
+.testimonials-gallery {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 28px 42px;
+  min-height: 540px;
+  padding: 28px 0 12px;
+}
+
+.testimonial-card {
+  width: min(100%, 320px);
+  overflow: hidden;
+  border-radius: 32px;
+  background: var(--surface-lowest);
+  box-shadow: 0 22px 54px rgba(78, 33, 31, 0.08);
+  --testimonial-rotate: 0deg;
+  --testimonial-offset: 0px;
+  animation: testimonialFloat 5.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+.testimonial-card-left {
+  align-self: flex-start;
+  --testimonial-rotate: -4deg;
+  --testimonial-offset: 12px;
+}
+
+.testimonial-card-right {
+  align-self: flex-end;
+  --testimonial-rotate: 4deg;
+  --testimonial-offset: 92px;
+  animation-duration: 6.1s;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes testimonialFloat {
+  0%,
+  100% {
+    transform: rotate(var(--testimonial-rotate)) translateY(var(--testimonial-offset));
+  }
+
+  50% {
+    transform: rotate(var(--testimonial-rotate)) translateY(calc(var(--testimonial-offset) - 12px));
+  }
+}
+
 .timeline-section {
   padding: 96px 0;
   background: var(--surface-low);
@@ -1115,6 +1179,21 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .testimonials-gallery {
+    min-height: auto;
+    gap: 22px;
+    padding-top: 12px;
+  }
+
+  .testimonial-card,
+  .testimonial-card-left,
+  .testimonial-card-right {
+    width: min(100%, 380px);
+    align-self: auto;
+    --testimonial-rotate: 0deg;
+    --testimonial-offset: 0px;
+  }
+
   .services-grid {
     grid-template-columns: repeat(2, minmax(280px, 300px));
     justify-content: center;
@@ -1127,6 +1206,7 @@ h2 {
   .about,
   .services,
   .gallery,
+  .testimonials,
   .timeline-section,
   .contact {
     padding-top: 74px;

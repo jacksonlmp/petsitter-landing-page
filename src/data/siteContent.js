@@ -9,6 +9,8 @@ import cliente7Image from "../assets/images/Cliente 7.jpg";
 import cliente8Image from "../assets/images/Cliente 8.jpg";
 import cliente9Image from "../assets/images/Cliente 9.jpg";
 import cliente10Image from "../assets/images/Cliente 10.jpg";
+import review1Image from "../assets/images/reviews/Review-1.jpg";
+import review2Image from "../assets/images/reviews/Review-2.jpg";
 import fofuchoTesteImage from "../assets/images/Fofucho-teste.jpg";
 import allAnimals from "../assets/images/all-animals.jpg";
 import anaLaura1 from "../assets/images/analaura-1.jpg";
@@ -48,7 +50,7 @@ export const heroContent = {
 export const aboutContent = {
   title: "Quem sou eu?",
   description: [
-    "Meu nome é Ana Laura, estudante de medicina veterinária e apaixonada por animais. Possuo 5 gatos e 1 cachorro, e cuidar deles me ensinou a importância de respeitar a rotina, o comportamento e as necessidades individuais de cada pet.",
+    "Me chamo Ana Laura, sou estudante de Medicina Veterinária na UFAPE e apaixonada por animais. Tenho 5 gatos e 1 cachorro, e ao longo da convivência com eles e dos aprendizados na universidade, aprendi que cada animal é único e tem sua própria rotina, comportamento, tempo e espaço, que devem ser respeitados.",
     "Aqui, meus cuidados vão além do básico:",
   ],
   bulletPoints: [
@@ -154,6 +156,22 @@ export const galleryContent = {
       alt: "Cliente 10 da Ana Laura Petsitter.",
     },
 
+  ],
+};
+
+export const testimonialsContent = {
+  title: "Feedbacks",
+  items: [
+    {
+      src: review1Image,
+      alt: "Depoimento 1 de cliente da Ana Laura Petsitter.",
+      layout: "left",
+    },
+    {
+      src: review2Image,
+      alt: "Depoimento 2 de cliente da Ana Laura Petsitter.",
+      layout: "right",
+    },
   ],
 };
 
