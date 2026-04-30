@@ -1,8 +1,25 @@
 import { useState } from "react";
-import { FaBars, FaWhatsapp, FaXmark } from "react-icons/fa6";
+import {
+  FaBars,
+  FaCamera,
+  FaHouse,
+  FaPaw,
+  FaPhone,
+  FaUser,
+  FaWhatsapp,
+  FaXmark,
+} from "react-icons/fa6";
 import { contactContent, navItems } from "../../data/siteContent";
 import Brand from "../ui/Brand";
 import Button from "../ui/Button";
+
+const navIconMap = {
+  home: FaHouse,
+  about: FaUser,
+  services: FaPaw,
+  clients: FaCamera,
+  contact: FaPhone,
+};
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,15 +37,22 @@ function Header() {
       <header className="topbar">
         <Brand />
         <nav className="nav">
-          {navItems.map((item) => (
-            <a key={item.href} href={item.href}>
-              {item.label}
-            </a>
-          ))}
+          {navItems.map((item) => {
+            const Icon = navIconMap[item.icon];
+
+            return (
+              <a className="nav-link" key={item.href} href={item.href}>
+                {Icon ? <Icon className="nav-link-icon" /> : null}
+                <span>{item.label}</span>
+              </a>
+            );
+          })}
         </nav>
-        <Button className="topbar-cta" href="#contact">
-          Agendar agora
-        </Button>
+        <div className="topbar-actions">
+          <Button className="topbar-cta" href="#contact">
+            Agendar agora
+          </Button>
+        </div>
 
         <button
           aria-expanded={isMenuOpen}
@@ -56,11 +80,16 @@ function Header() {
           </div>
 
           <nav className="mobile-nav">
-            {navItems.map((item) => (
-              <a href={item.href} key={item.href} onClick={handleMenuClose}>
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              const Icon = navIconMap[item.icon];
+
+              return (
+                <a className="mobile-nav-link" href={item.href} key={item.href} onClick={handleMenuClose}>
+                  {Icon ? <Icon className="mobile-nav-link-icon" /> : null}
+                  <span>{item.label}</span>
+                </a>
+              );
+            })}
           </nav>
 
           <Button className="mobile-menu-cta" href="#contact" variant="primary">
